@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>صنع المعروف كنز حقيقي</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Amiri+Quran&family=Amiri:wght@400;700&family=Baloo+Bhaijaan+2:wght@500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><defs>
+ <linearGradient id="wood" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#D29660"/><stop offset="1" stop-color="#A86B3C"/></linearGradient>
+ <radialGradient id="glow"><stop offset="0" stop-color="#FFE48A" stop-opacity=".95"/><stop offset="1" stop-color="#FFE48A" stop-opacity="0"/></radialGradient>
+ <radialGradient id="qbg" cx=".5" cy=".55" r=".75"><stop offset="0" stop-color="#FFF7DA"/><stop offset=".45" stop-color="#CFF3F1"/><stop offset="1" stop-color="#5FC8DC"/></radialGradient>
+</defs></svg>
+<div id="stage"><div id="board"></div><div id="stack"></div><div id="book"></div></div>
+<div id="measure"></div>
+<div id="ctl">
+  <button class="arrow" id="back" aria-label="الصفحة السابقة"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M9 5l7 7-7 7"/></svg></button>
+  <div id="ind" aria-live="polite">الغلاف</div>
+  <button class="arrow" id="fwd" aria-label="الصفحة التالية"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M15 5l-7 7 7 7"/></svg></button>
+  <button class="small" id="again">إعادة قراءة القصة</button>
+  <button class="small" id="fs">ملء الشاشة</button>
+</div>
+<p id="hint">اضغط على طرف الغلاف الأيسر أو اسحبه لفتح الكتاب</p>
+<script src="js/page-flip.browser.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
